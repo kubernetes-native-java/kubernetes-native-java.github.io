@@ -1,7 +1,7 @@
 <html>
   <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> 
-    
+<!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> 
+     -->
   </head>
 <body>
   <div class="splash">
@@ -18,10 +18,10 @@ metadata:
 spec:
   message: “Hello, world!”  
 </CODE></PRE>
+  
 
-
-<P> I love <a href="https://twitter.com/SpringBoot">Spring Boot</a>.
- It is one of the most productive ways to get applications to <strong>production</strong>. 
+<P><a href="https://twitter.com/starbuxman">I</a> love <a href="https://twitter.com/SpringBoot">Spring Boot</a>.
+ It is one of the most productive ways to build applications intended for <strong>production</strong>. 
  </P>
   <P>  I <EM>love</EM> production. <EM>You </EM> should love production. 
    Production is the happiest place on Earth! It's better than Disneyland. And for most folks these days, <a href="https://twitter.com/KubernetesIO">Kubernetes</a> <EM>is</EM> production. 
@@ -37,25 +37,28 @@ spec:
 
  <style type="text/css">
 
-  a {
+  * {
+   font-family: sans-serif; 
+   line-height: 1.3em;
+  }
 
+  code {
+    font-family: monospace; 
+  }
+  a {
+    color :   black ;
   }
 
   body {
-    /*background-color: #003366;*/
-    /*color: white;*/
     display: grid;
     grid-template-columns: 10vw auto 10vw;
     grid-template-rows: 5vh auto    ;
-    /*border: 1px solid yellow;*/
-
   }
 
   .bg {
     z-index: -10;
     grid-column: 2  ;
     grid-row: 2    ; 
-    /*border: 1px solid red ;*/
     width : 100%; 
     justify-content: center;
     align-self: flex-end;
@@ -65,7 +68,6 @@ spec:
   .splash {
     grid-column: 2;
     grid-row: 2;
-    /*border: 1px solid green ;*/
   }
 
  </style>
