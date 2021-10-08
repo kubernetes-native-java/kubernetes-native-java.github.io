@@ -4,7 +4,8 @@
     
   </head>
 <body>
-  
+  <div class="splash">
+    
   
   
   <h1> Hello, <EM>Kubernetes Native Java</EM>! </h1> 
@@ -31,18 +32,43 @@ spec:
   <P>
     Follow <a href="https://twitter.com/k8s_native_Java">@k8s_native_java</a> for more!
   </p>
-  <img src="spring-k8s.png" /> 
+
+  </div>
+
+    <img src="spring-k8s.png"   class ="bg" />  
+
  <style type="text/css">
-    
-   body {
+
+  a {
+
+  }
+
+  body {
     background-color: #003366;
-    color:  white;
+    color: white;
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-rows: 5vh auto    ;
+    border: 1px solid yellow;
 
-    padding-left: 10vw;
+  }
 
-    padding-right:  10vw ;
-    padding-top:  5vh ;
-   }
+  .bg {
+    z-index: -10;
+    grid-column: 2  ;
+    grid-row: 2    ; 
+    border: 1px solid red ;
+    width : 100%; 
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .splash {
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px solid green ;
+  }
 
  </style>
 
